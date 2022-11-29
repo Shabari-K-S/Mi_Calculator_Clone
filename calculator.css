@@ -1,0 +1,81 @@
+@import url('https: //fonts.googleapis.com/css?family=Poppien: 300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fff;
+}
+/* Solid border */
+.dashed {
+	grid-column: span 4;
+	padding: 0;
+	border: 1px solid;
+	border-top: 1px solid rgb(100, 100, 100);
+}
+.calculator
+{
+	position: relative;
+	display: inline-grid;
+}
+.calculator .value
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #fff;
+	color: #000;
+
+}
+
+.calculator span
+{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: rgb(0, 0, 0);
+	background: #fff;
+	place-items: center;
+	border: none;
+	border-radius: 3cm;
+}
+.calculator span:active
+{
+	background: rgb(250, 250, 250) ;
+	color: #000;
+}
+.calculator span.clear
+{
+	width: 65px;
+	background: #ffffff;
+	color: #ff8f0e;
+}
+.calculator span.plus
+{
+	grid-row: span 2;
+	height: 120px;
+	color: #ff8f0e;
+}
+.calculator span.equal
+{
+	background: #ff8f0e;
+}
+.calculator:active{
+	transform : 55px 55px;
+}
+.calculator span.symbol
+{
+	color: #df843a;
+}
