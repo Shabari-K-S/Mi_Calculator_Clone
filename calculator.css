@@ -14,7 +14,6 @@ body
 	min-height: 100vh;
 	background: #fff;
 }
-/* Solid border */
 .dashed {
 	grid-column: span 4;
 	padding: 0;
@@ -72,7 +71,7 @@ body
 {
 	background: #ff8f0e;
 }
-.calculator:active{
+.calculator span.equal:active{
 	transform : 55px 55px;
 }
 .calculator span.symbol
